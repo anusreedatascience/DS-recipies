@@ -1,0 +1,96 @@
+/* App.css */
+
+body {
+  background: linear-gradient(135deg, #FFB6C1 0%, #FF69B4 100%); /* Soft pink to bright pink gradient */
+  color: #4B0082; /* Indigo for soft contrast on the pink background */
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif; /* Elegant font */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #4B0082; /* Indigo for headings */
+}
+
+a {
+  color: #fff; /* White text for links */
+  text-decoration: none; /* Clean links */
+}
+
+a:hover {
+  color: #FF69B4; /* Bright pink on hover for links */
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.header, .footer {
+  background-color: #FF69B4; /* Bright pink for header and footer */
+  color: white;
+  padding: 20px;
+}
+
+.header a {
+  color: white; /* White for header links */
+}
+
+.header a:hover {
+  color: #FFB6C1; /* Light pink for active header links */
+}
+
+.button {
+  background-color: #FFB6C1; /* Light pink */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: #FF69B4; /* Darker pink on hover */
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 0.5rem;
+  padding: 20px;
+  margin: 20px;
+  color: #4B0082; /* Indigo for card text */
+}
+
+.card h3 {
+  color: #FF69B4; /* Bright pink for headings inside cards */
+}
+
+.card p {
+  color: #555; /* Dark gray for content text */
+}
+
+.footer {
+  background-color: #FF69B4;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #FFB6C1;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
+}
+
