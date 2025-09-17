@@ -1,0 +1,83 @@
+.hero-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25vh;
+    padding-left: 4vw;
+}
+
+.hero-text .hero-line {
+    height: 3px;
+    width: 10vw;
+    background-color: rgb(255, 105, 180); /* Hot Pink Line */
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: rgb(255, 105, 180); /* Hot Pink text */
+}
+
+.hero-text p {
+    margin: 0;
+    color: rgb(245, 239, 239); /* Gray text for paragraph */
+}
+
+.hero-text button {
+    width: 15vw;
+    height: 8vh;
+    background: linear-gradient(90deg, rgb(255, 105, 180) 0%, rgb(255, 240, 245) 100%); /* Gradient of pink shades */
+    background-size: 200% 120%;
+    background-position: 100% 0;
+    transition: background-position 0.5s ease-in-out;
+    transition: color 0.8s ease;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    border: 1.5px solid rgb(255, 105, 180); /* Hot Pink Border */
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 3vh;
+    color: white; /* White text for contrast */
+}
+
+.hero-text button:hover {
+    background-position: 0 0;
+    color: rgb(250, 246, 247); /* Light Pink on hover */
+    transition: color 0.8s ease;
+    transition: background-position 0.5s ease-in-out;
+}
+
+.hero-images {
+    display: flex;
+    width: 100%;
+    gap: 5vh;
+    justify-content: center;
+}
+
+.hero-images .span1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding-top: 5vh;
+}
+
+.hero-images .span2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding-top: 15vh;
+}
+
+.hero-images img {
+    width: 20vw;
+    border-radius: 0.7rem;
+    box-shadow: rgba(255, 105, 180, 0.2) 0px 2px 8px 0px; /* Light pink shadow */
+}
+
+

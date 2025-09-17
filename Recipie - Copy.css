@@ -1,0 +1,125 @@
+.Recipe-page {
+    padding-top: 12vh;
+    min-height: 60vh;
+    background-color: rgb(255, 240, 245); /* Soft pink background */
+}
+
+.recipie-img {
+    width: 100%;
+    padding-top: 2vh;
+}
+
+.recipie-img img {
+    width: 98%;
+    margin-left: 1%;
+    height: 85vh;
+    border-radius: 0.7rem;
+    box-shadow: rgba(255, 105, 180, 0.2) 0px 4px 12px; /* Light pink shadow */
+}
+
+.recipie-data-container {
+    display: grid;
+    grid-template-columns: 65% 25%;
+    justify-content: space-evenly;
+}
+
+.recipie-data {
+    box-shadow: rgba(255, 105, 180, 0.2) 0px 18px 50px -10px; /* Light pink shadow */
+    position: relative;
+    top: -15vh;
+    background-color: rgb(255, 182, 193); /* Light pink background */
+    padding: 4vh 2vw;
+    border-radius: 0.6rem;
+}
+
+
+.recipie-header h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(255, 105, 180); /* Hot pink heading */
+}
+
+.recipie-header .recipie-specials {
+    display: flex;
+    gap: 10px;
+}
+
+.recipie-header .recipie-specials p {
+    border: 1px solid rgb(255, 105, 180); /* Hot pink border */
+    color: rgb(255, 105, 180); /* Hot pink text */
+    padding: 5px 20px;
+    border-radius: 2rem;
+    font-size: 0.7rem;
+}
+
+
+.recipie-data .procedure h5 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 3vh;
+    color: rgb(255, 105, 180); /* Hot pink heading */
+}
+
+.recipie-data .procedure p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgb(8, 8, 8); /* Light gray text */
+}
+
+
+
+.youtube-video-container h5 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 3vh;
+    color: rgb(255, 105, 180); /* Hot pink heading */
+}
+
+.ingredients-container {
+    box-shadow: rgba(255, 105, 180, 0.2) 0px 18px 50px -10px; /* Light pink shadow */
+    position: relative;
+    top: -15vh;
+    background-color: rgb(255, 182, 193); /* Light pink background */
+    padding: 4vh 2vw;
+    border-radius: 0.6rem;
+    height: fit-content;
+}
+
+.ingredients-container h3 {
+    margin: 0;
+    padding-bottom: 1vh;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(255, 105, 180); /* Hot pink heading */
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+.ingredient {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ingredient h5 {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+    max-width: 50%;
+    color: rgb(255, 105, 180); /* Hot pink ingredient name */
+}
+
+.ingredient p {
+    margin: 0;
+    font-size: 0.8rem;
+    max-width: 40%;
+    color: rgb(2, 2, 2); /* Light gray ingredient text */
+}

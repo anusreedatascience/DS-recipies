@@ -1,0 +1,88 @@
+.category-page {
+    padding-top: 14vh;
+    padding-bottom: 8vh;
+    min-height: 50vh;
+}
+
+.categorypage-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categorypage-head h2 {
+    padding-left: 2vw;
+    font-weight: 500;
+    color: rgb(255, 105, 180); /* Hot Pink for heading */
+}
+
+.categorypage-head-options {
+    padding-right: 3vw;
+}
+
+.categorypage-head-options p {
+    margin: 0;
+    font-size: 0.8rem;
+    color:wheat; /* Lighter Gray for text */
+}
+
+.categorypage-head-options span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.categorypage-head-options span button {
+    width: 70px;
+    font-size: 0.7rem;
+    height: 6vh;
+    border: 1.5px solid rgb(255, 105, 180); /* Hot Pink border */
+    border-radius: 0.3rem;
+    color: rgb(255, 105, 180); /* Hot Pink text color */
+    font-weight: 600;
+    background-color: rgba(255, 240, 245, 0); /* Transparent background */
+    cursor: pointer;
+}
+
+.categorypage-head-options span button:hover {
+    background-color: rgb(255, 105, 180); /* Hot Pink background on hover */
+    color: aliceblue; /* Light text color */
+}
+
+
+.food-items {
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 3vh;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    justify-content: space-between;
+    row-gap: 5vh;
+}
+
+.food-items .food-item {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    padding: 10px;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.food-items .food-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 18px; /* Slightly stronger shadow */
+    transform: translateY(-8px);
+    transition: 0.3s ease-in-out;
+}
+
+.food-items .food-item img {
+    width: 100%;
+    height: 35vh;
+    border-radius: 0.7rem;
+}
+
+.food-items .food-item h4 {
+    margin: 0;
+    font-weight: 400;
+    color: rgb(255, 105, 180); /* Hot Pink text for item name */
+}

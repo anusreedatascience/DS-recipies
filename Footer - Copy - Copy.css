@@ -1,0 +1,48 @@
+.footer {
+    background-color: rgb(255, 105, 180); /* Hot pink background */
+    padding: 5vh 2vw 0 2vw;
+}
+
+.footer h3 {
+    font-family: 'Whisper', cursive;
+    color: rgb(255, 240, 245); /* Light Pink text for the footer heading */
+    font-size: 2.3rem;
+    margin: 0;
+    padding-left: 2vw;
+}
+
+
+    /* You can style the horizontal rule here if needed */
+
+
+.footer-options {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-options ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-options ul li {
+    list-style: none;
+    cursor: pointer;
+    color: rgb(246, 248, 250); /* Light Gray for footer list items */
+    font-size: 0.8rem;
+}
+
+.footer-options ul li:hover {
+    color: rgb(255, 105, 180); /* Hot Pink on hover for footer list items */
+}
+
+.footer p {
+    margin: 0;
+    text-align: center;
+    padding: 2vh 0;
+    color: rgb(253, 250, 250); /* Lighter Gray for footer text */
+}
