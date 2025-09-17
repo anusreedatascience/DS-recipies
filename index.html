@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookbook App</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- React 17 -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- React Router DOM v5.3.4 -->
+    <script src="https://unpkg.com/react-router-dom@5.3.4/umd/react-router-dom.min.js"></script>
+
+    <!-- Babel for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const {
+        BrowserRouter,
+        Switch,
+        Route,
+        useHistory
+      } = ReactRouterDOM;
+
+      function HomePage() {
+        const history = useHistory();
+        return (
+          <div className="flex flex-col items-center justify-center min-h-screen bg-white">
+            <h1 className="text-5xl font-bold mb-6">Cookbook</h1>
+            <button
+              onClick={() => history.push("/signin")}
+              className="px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
+            >
+              Start
+            </button>
+          </div>
+        );
+      }
+
+      function SignInPage() {
+        const history = useHistory();
+        return (
+          <div className="flex flex-col items-center justify-center min-h-screen bg-white">
+            <h2 className="text-3xl font-bold mb-6">Sign In</h2>
+            <input type="email" placeholder="Email" className="border p-2 mb-4 rounded w-64" />
+            <input type="password" placeholder="Password" className="border p-2 mb-6 rounded w-64" />
+            <button
+              onClick={() => history.push("/cookbook")}
+              className="px-6 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700"
+            >
+              Sign In
+            </button>
+            <button
+              onClick={() => history.push("/signup")}
+              className="mt-4 px-6 py-2 bg-gray-400 text-white rounded-lg shadow hover:bg-gray-500"
+            >
+              Go to Sign Up
+            </button>
+          </div>
+        );
+      }
+
+      function SignUpPage() {
+        const history = useHistory();
+        return (
+          <div className="flex flex-col items-center justify-center min-h-screen bg-white">
+            <h2 className="text-3xl font-bold mb-6">Sign Up</h2>
+            <input type="text" placeholder="Name" className="border p-2 mb-4 rounded w-64" />
+            <input type="email" placeholder="Email" className="border p-2 mb-4 rounded w-64" />
+            <input type="password" placeholder="Password" className="border p-2 mb-6 rounded w-64" />
+            <button
+              onClick={() => history.push("/cookbook")}
+              className="px-6 py-2 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700"
+            >
+              Sign Up
+            </button>
+          </div>
+        );
+      }
+
+      function CookbookPage() {
+        return (
+          <div className="flex flex-col items-center justify-center min-h-screen bg-white">
+            <h2 className="text-3xl font-bold mb-6">Welcome to the Cookbook</h2>
+            <p className="text-lg text-gray-700">Your recipes will go here.</p>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <BrowserRouter>
+            <Switch>
+              <Route path="/" exact component={HomePage} />
+              <Route path="/signin" component={SignInPage} />
+              <Route path="/signup" component={SignUpPage} />
+              <Route path="/cookbook" component={CookbookPage} />
+            </Switch>
+          </BrowserRouter>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
